@@ -33,6 +33,7 @@ app.get("/*", function (req, res) {
     }
   );
 });
+app.get("*", () => {});
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
